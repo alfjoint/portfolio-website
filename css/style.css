@@ -108,7 +108,7 @@ header {
   background-color: #28ff00;
 }
 .container {
-  padding: 50px;
+  padding: 0px;
 }
 #work .row {
   margin: 25px 15px; /* 25 px top and bottom, 15 left and right */
