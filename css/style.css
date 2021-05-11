@@ -106,34 +106,65 @@ header {
   position: fixed;
   width: 100%;
   background-color: #28ff00;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  padding: 10px 0 0;
 }
 .container {
-  padding: 0px;
+  padding: 0 15px;
 }
 #work .row {
   margin: 25px 15px; /* 25 px top and bottom, 15 left and right */
-  padding-bottom: 0px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #000000;
 }
 .logo {
   max-width: 50px;
   margin-top: 15px;
 }
+nav {
+  display: inline-block;
+  width: 100%;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(134, 134, 134, 0.192);
+}
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 20px;
+  padding-right: 0;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #000000;
+  color: #4e8e41;
 }
 nav > ul > li > a:active {
-  color: #000000;
+  color: #7bc96b;
 }
 nav {
   display: inline-block;
@@ -141,7 +172,7 @@ nav {
 }
 /*main styling (start main section below header)*/
 main {
-  padding-top:0;
+  padding-top:98px;
 }
 /* hero styling*/
 #hero {
@@ -163,10 +194,10 @@ main {
 }
 /* footer styling */
 #contact h2 {
-  text-align: center;
+  text-align: left;
 }
 #contact p {
-  text-align: center;
+  text-align: left;
 }
 #work h2 {
   text-align: center;
@@ -182,12 +213,6 @@ footer p {
   float: right;
   text-align: left;
   padding-left: 10px;
-}
-.behance {
-  width: 50%;
-  float: left;
-  text-align: right;
-  padding-right: 10px;
 }
 .socialmedia::after {
   content: "";
@@ -223,4 +248,136 @@ footer p {
   color: white;
   display: inline-block;
   width: 100%;
+}
+.doughbaby.intro h1 {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 10px 0 0 0;
+}
+.doughbaby.intro h2 {
+  font-weight: 100;
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+.col-sm-6 {
+  width: 35%;
+  display: inline-block;
+}
+.scaledown70 {
+  width: 70%;
+}
+.scaledown50 {
+  width: 50%;
+}
+.scaledown30 {
+  width: 30%;
+}
+.row.trends {
+  padding-top: 20px;
+}
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-sm-6 {
+  width: 50%;
+}
+.col-sm-12 {
+  width: 100%;
+}
+.visual2 img {
+  width: 50%;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  main {
+    padding-top: 91px;
+  }
+  #hero span {
+    display: block;
+  }
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .userflow {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .solution1 {
+    float: right;
+  }
+  .solution2 {
+    float: left;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  .col-lg-2 {
+    width: 15%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
