@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: white;
   font-family: "Quicksand", sans-serif;
@@ -9,24 +10,29 @@ body {
   line-height: 1.4;
   color: black;
 }
+
 h1,
 h2,
 h3,
 h4 {
   line-height: 1.2;
 }
+
 h1 {
   font-size: 2.25em;
   font-weight: 700;
 }
+
 h2 {
   font-size: 1.75em;
   font-weight: 700;
 }
+
 h3 {
   font-size: 1.5em;
   font-weight: 500;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 500;
@@ -42,9 +48,11 @@ a {
   color: #000000;
   text-decoration: none;
 }
+
 a:visited {
   color: #000000;
 }
+
 a:hover,
 a:focus {
   color: #000000;
@@ -67,18 +75,22 @@ a:active {
   border-bottom: 2px solid #4e8e41;
   transition: 0.2s opacity;
 }
+
 .button:hover,
 .button.readmore:focus {
   opacity: 0.8;
   text-decoration: none;
 }
+
 .button:active {
   background-color: #4e8e41;
   color: #ffffff;
 }
+
 .button.readmore {
   color: #ffffff;
 }
+
 .button.contact {
   background-color: transparent;
   color: #7bc96b;
@@ -90,16 +102,19 @@ a:active {
   transition: 0.2s opacity;
   margin-bottom: 15px;
 }
+
 .button.contact:hover,
 .button.contact:focus {
   background-color: #7bc96b;
   color: white;
   text-decoration: none;
 }
+
 .button.contact:active {
   background-color: #4e8e41;
   color: #ffffff;
 }
+
 /* Layout styling */
 /* header styling */
 header {
@@ -111,40 +126,51 @@ header {
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   padding: 10px 0 0;
 }
+
 .container {
   padding: 0 15px;
 }
+
 #work .row {
-  margin: 25px 15px; /* 25 px top and bottom, 15 left and right */
+  margin: 25px 15px;
+  /* 25 px top and bottom, 15 left and right */
   padding-bottom: 25px;
   border-bottom: 1px solid #000000;
 }
+
 .logo {
   max-width: 50px;
   margin-top: 15px;
 }
+
 nav {
   display: inline-block;
   width: 100%;
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(134, 134, 134, 0.192);
 }
+
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -152,28 +178,34 @@ nav {
   font-size: 20px;
   padding-right: 0;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
   color: #4e8e41;
 }
-nav > ul > li > a:active {
+
+nav>ul>li>a:active {
   color: #7bc96b;
 }
+
 nav {
   display: inline-block;
   width: 100%;
 }
+
 /*main styling (start main section below header)*/
 main {
-  padding-top:98px;
+  padding-top: 98px;
 }
+
 /* hero styling*/
 #hero {
   background-color: #000000;
@@ -181,66 +213,83 @@ main {
   display: inline-block;
   width: 100%;
 }
+
 #hero h1 {
   text-align: center;
   margin: 0;
 }
+
 #hero h2 {
   text-align: center;
   margin: 15px 0;
 }
+
 #hero p {
   text-align: center;
 }
+
 /* footer styling */
 #contact h2 {
   text-align: left;
 }
+
 #contact p {
   text-align: left;
 }
+
 #work h2 {
   text-align: center;
 }
+
 footer p {
   margin-bottom: 10px;
 }
+
 .centerMe {
   text-align: center;
 }
+
 .linkedin {
   width: 50%;
   float: right;
   text-align: left;
   padding-left: 10px;
 }
+
 .socialmedia::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .social {
   max-width: 55px;
 }
+
 /* about page styling */
 .aboutme h2 {
   text-align: center;
 }
+
 .abouttitle {
   text-align: center;
   padding: px 10;
   display: inline-block;
   width: 100%;
 }
+
 /* doughbaby styling */
 .doughbaby {
   background-color: white;
+  padding-top: 0px;
 }
+
 .doughbaby h2 {
   font-weight: 500;
   font-size: 1.75em;
   margin: 40px 0;
 }
+
 .doughbaby.intro {
   text-align: center;
   padding: 90px 15px 5px 15px;
@@ -249,50 +298,63 @@ footer p {
   display: inline-block;
   width: 100%;
 }
+
 .doughbaby.intro h1 {
   font-weight: 300;
   font-size: 3em;
   margin: 10px 0 0 0;
 }
+
 .doughbaby.intro h2 {
   font-weight: 100;
   font-size: 1.25em;
   margin: 10px 0;
 }
+
 .col-sm-6 {
   width: 35%;
   display: inline-block;
 }
+
 .scaledown70 {
   width: 70%;
 }
+
 .scaledown50 {
   width: 50%;
 }
+
 .scaledown30 {
   width: 30%;
 }
+
 .row.trends {
   padding-top: 20px;
 }
+
 [class*="col-"] {
   float: left;
   padding-left: 10px;
 }
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .col-sm-6 {
   width: 50%;
 }
+
 .col-sm-12 {
   width: 100%;
 }
+
 .visual2 img {
   width: 50%;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -301,86 +363,173 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  nav > ul {
+
+  nav>ul {
     margin: 1em 0;
   }
-  nav > ul > li {
+
+  nav>ul>li {
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
+
   .logo {
     margin-top: 0;
   }
+
   main {
     padding-top: 91px;
   }
+
   #hero span {
     display: block;
   }
+
   [class*="col-"] {
     float: left;
     padding-left: 10px;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
   .col-md-4 {
     width: 33.33%;
   }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
   .userflow {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   .solution1 {
     float: right;
   }
+
   .solution2 {
     float: left;
   }
-}
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 60%;
-  }
-  .col-lg-5 {
-    width: 40%;
-  }
-  .col-lg-2 {
-    width: 15%;
-  }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
-  [class*="col-"] {
-    float: left;
-    padding-left: 10px;
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-1 {
+    width: 8.33%;
   }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
   }
 }
+
 /* ==============================
 Brandenberg gate Animation Example
 ================================= */
@@ -389,36 +538,45 @@ Brandenberg gate Animation Example
   max-width: 100%;
   height: auto;
 }
+
 @keyframes color-change {
   from {
     fill: #edc655;
   }
+
   to {
     fill: #f76414;
   }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
 }
+
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
