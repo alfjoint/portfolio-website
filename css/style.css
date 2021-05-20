@@ -124,7 +124,7 @@ header {
   -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  padding: 10px 0 0;
+  padding: 10px 0 4px;
 }
 
 .container {
@@ -143,29 +143,28 @@ header {
   margin-top: 15px;
 }
 
+.nav {
+  display: inline-block;
+  width: 100%;
+}
 .navtoggle li:not(:last-child) {
   display: none;
 }
-
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
 }
-
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(134, 134, 134, 0.192);
 }
-
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -173,31 +172,23 @@ header {
   font-size: 20px;
   padding-right: 0;
 }
-
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
   color: #4e8e41;
 }
-
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   color: #7bc96b;
 }
-
 nav {
   display: inline-block;
   width: 100%;
-}
-
-.navtoggle.responsive li  {
-  display: block;
 }
 
 /*main styling (start main section below header)*/
