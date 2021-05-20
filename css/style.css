@@ -143,11 +143,6 @@ header {
   margin-top: 15px;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
